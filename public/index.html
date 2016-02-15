@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+        <main>
+            <div id="root" class="wrapper">
+                <div class="map">
+                    <iframe
+                        width="600"
+                        height="450"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGXQCVW_TFiCWpb6KPOXyamIUwsKz_B9w
+                        &q=Space+Needle,Seattle+WA" allowfullscreen>
+                    </iframe>
+                </div>
+                <aside class="list">
+                </aside>
+                <div class="markers">
+                </div>
+                <div class="register hide">
+                    <form>
+                        <h2>Register</h2>
+                        <input 
+                            type="text"
+                            name="first-name"
+                            autocomplete="first-name"
+                            placeholder="Name"
+                            autofocus
+                            required
+                        />
+                        <input 
+                            type="text"
+                            name="last-name"
+                            autocomplete="last-name"
+                            placeholder="Last name"
+                            required
+                        />
+                        <input 
+                            type="email"
+                            name="email"
+                            autocomplete="email"
+                            placeholder="email"
+                            required
+                        />
+                        <input
+                            class="mid"
+                            type="tel"
+                            pattern="[0-9]{10}"
+                            name="tel"
+                            autocomplete="tel"
+                            placeholder="tel"
+                            required
+                        />
+                        <select 
+                            class="mid"
+                            required
+                        >
+                            <option value="" disabled selected>Blood type</option>
+                            <option value="A">A</option>
+                            <option value="B">B</option>
+                            <option value="AB">AB</option>
+                            <option value="O">O</option>
+                        </select>
+                        <input class="button cancel mid" type="button" name="cancel" value="cancel" />
+                        <input class="button submit mid" type="submit" name="register" value="register" />
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="js/bundle.js"></script>
+    </body>
+</html>

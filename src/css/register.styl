@@ -1,0 +1,84 @@
+.register
+    background $colorAlpha
+    position absolute
+    top 0
+    left 0
+    width 100vw
+    height 100vh
+    form
+        display block
+        position absolute
+        top 50%
+        left 40%
+        transform translate(-50%,-50%)
+        z-index 10
+        overflow hidden
+        width 50vw
+        max-width 600px
+        min-width 200px
+        height auto
+        max-height 500px
+        background $color2
+        border-radius 10px
+        box-shadow 0 1px 2px #aaa
+        box-sizing border-box
+        padding 5% 0 5% 0
+        @media screen and (max-width:600px)
+            left 50%
+            width 80vw
+        h2
+            display block
+            width 80%
+            margin auto
+        input
+        select
+        button
+        a
+            text-decoration none
+            display block
+            width 80%
+            box-sizing border-box
+            margin 10px auto 0% auto
+            padding 10px
+            border none
+            border-bottom solid 1px $color1
+            background none
+            transition border-color .5s ease
+            border-top solid 1px $white
+            border-left solid 1px $white
+            border-right solid 1px $white
+            &:focus
+                border-top solid 1px $color1
+                border-left solid 1px $color1
+                border-right solid 1px $color1
+                box-shadow none
+                outline none
+            &:first-child
+                margin 0 auto 0 auto
+            &.mid
+                width 34%
+                display inline-block
+                margin 10px 0% 0 10%
+                @media screen and (max-width:600px)
+                    width 80%
+                    display block
+            &.button
+                border 1px solid $color1
+                text-transform uppercase
+                margin 20px 0 0 10%
+                transition background .5s ease
+                text-align center
+            &.submit
+                border 1px solid $green
+                background $white
+                color $green
+                &:hover
+                    background $green
+                    color $white
+            &.cancel
+                border 1px solid $red
+                color $red
+                &:hover
+                    background $red
+                    color $white
+

@@ -1,0 +1,28 @@
+{
+    "name": "CrossOver",
+    "description": "Job aplication",
+    "main": "index.js",
+    "authors": [
+        "Arlefreak"
+    ],
+    "license": "MIT",
+    "keywords": [
+        "Html5",
+        "stylus",
+        "bower",
+        "gulp",
+        "boilerplate"
+    ],
+    "moduleType": [],
+    "homepage": "https://arlefreak.com",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "devDependencies": {
+        "jquery": "~2.1.4"
+    }
+}

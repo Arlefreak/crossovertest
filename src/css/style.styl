@@ -1,0 +1,27 @@
+@import 'nib'
+@import 'lib/*'
+@import 'components/*'
+
+global-reset()
+
+html
+body
+    margin 0
+    padding 0
+    color $color1
+    background $color2
+    font-family $font
+    .wrapper
+        height auto
+        display block
+        margin auto
+    .hideMobile
+        @media screen and (max-width: 820px)
+            display none
+
+@import 'map'
+@import 'list'
+@import 'register'
+@import 'header'
+@import 'content'
+@import 'footer'

@@ -1,0 +1,38 @@
+.list
+    width 20vw
+    min-width 300px
+    height 100vh
+    overflow-y auto
+    overflow-x hidden
+    position absolute
+    top 0
+    right 0
+    background $color1
+    color $white
+    h2
+        color white
+        display block
+        width 80%
+        margin 10px auto 10px auto
+    ul
+        width 80%
+        margin auto
+        overflow-x hidden
+        overflow-y auto
+        li
+            width 100%
+            display block
+            margin 10px auto 10px auto
+            border-bottom 1px solid $white
+            padding 0 0 10px 0
+            span
+                display block
+                font-weight 100
+                margin 5px 0 5px 0
+                &:first-child
+                    font-weight 400
+    @media screen and (max-width:600px)
+        width 100vw
+        height 20vh
+        bottom 0
+        top inherit
